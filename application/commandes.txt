@@ -1,0 +1,120 @@
+    1  snap install microk8s --classic
+    2  apt install microk8s --classic
+    3  apt install microk8s 
+    4  sudo apt install microk8s 
+    5  sudo apt-get install microk8s 
+    6* kubect
+    7  touch 
+    8  touch ./.kube
+    9  chmod 7000 ./.kube
+   10  sudo apt update
+   11  sudo apt upgrade
+   12  timedatectl set-timezone Europe/Zagreb
+   13  sudo reboot
+   14  sudo apt install linux-headers-$(uname -r)
+   15  sudo apt update
+   16  sudo apt install snapd
+   17  snap install microk8s --classic
+   18  sudo snap install microk8s --classic
+   19  sudo apt update
+   20  sudo snap install microk8s --classic
+   21  sudo snap install microk8s --classic --channel=1.32
+   22  sudo apt install -y snapd
+   23  sudo systemctl enable --now snapd.socket snapd.service
+   24  service --status-all
+   25  sudo systemctl status snapd.socket --no-pager
+   26  sudo service enable --now snapd.socket snapd.service
+   27  sudo service enable snapd.socket snapd.service
+   28  sudo service snapd start
+   29  sudo service snapd status
+   30  sudo apt install -y snapd
+   31  sudo service snapd status
+   32  sudo apt update
+   33  sudo service snapd status
+   34  touch install.sh
+   35  chmod 777 install.sh 
+   36  ./install.sh 
+   37  docker ps 
+   38  docker images
+   39  $ docker run -d -p 5000:5000 --restart always --name registry registry:3
+   40  docker ps 
+   41  docker login
+   42  docker logout
+   43  docker ps
+   44  docker rm d
+   45  docker run -d   --name registry   --restart unless-stopped   -p 127.0.0.1:5000:5000   -v registry-data:/var/lib/registry   registry:3
+   46  docker 
+   47  docker ps 
+   48  curl 127.0.0.1:5000/v2
+   49  docker images
+   50  docker pull nginx
+   51  docker tag nginx:latest 127.0.0.1:5000/nginx:latest
+   52  docker push 127.0.0.1:5000/nginx:latest
+   53  docker images
+   54  docker run -d -p 8081:8081 --name nexus sonatype/nexus3y
+   55  docker run -d -p 8081:8081 --name nexus sonatype/nexus3
+   56  docker ps 
+   57  docker kill 1 & docker rm 1
+   58  docker rm 1
+   59  docker rm 1docker ps 
+   60  docker ps 
+   61  docker kill f
+   62  docker rm f
+   63  docker run -d -p 8081:8081 --name nexus sonatype/nexus3
+   64  dockepr s 
+   65  docker ps 
+   66  docker log c
+   67  cat /nexus-data/admin.password
+   68  ls
+   69  ls /
+   70  ls /home/
+   71  ls /home/codespace/
+   72  ls
+   73  docker ps 
+   74  docker exec -it c sh
+   75  docker run -d --name registry --restart unless-stopped -p 127.0.0.1:5000:5000 -v registry-data:/var/lib/registry registry:3
+   76  docker ps 
+   77  curl localhost:5000
+   78  curl localhost:5000/v2
+   79  docker login
+   80  docker logout
+   81  docker login localhost:5000
+   82  ls
+   83  docker login localhost:5000
+   84  docker pull python
+   85  docker tag python:latest localhost:5000/python:3.2.1
+   86  docker images
+   87  docker push localhost:5000/python:3.2.1
+   88  docker images
+   89  docker tag python:latest localhost:5000/python:esiea
+   90  docker tag python:latest localhost:5000/python:esieatd
+   91  docker tag python:latest localhost:5000/python:esieatd2
+   92  docker push localhost:5000/python:esieatd2
+   93  docker push localhost:5000/python:esieatd
+   94  docker push localhost:5000/python:esiea
+   95  ls
+   96  cd application/
+   97  ls
+   98  touch Dockerfile
+   99  docker images
+  100  git add .
+  101  git commit -m "first"
+  102  git push
+  103  docker images
+  104  git add .
+  105  git commit -m "second"
+  106  git push
+  107  ls
+  108  docker build -t monapplicaton:latest .
+  109  docker imahes
+  110  docker images
+  111  docker run -it monapplicaton:latest
+  112  docker build -t monapplicaton:1 .
+  113  docker run -it monapplicaton:1
+  114  docker run -d -p 0.0.0.0:8080:8080 monapplicaton:1
+  115  docker ps 
+  116  ls
+  117  docker tag monapplicaton:1 localhost:5000/monapplicaton:2
+  118  docker push localhost:5000/monapplicaton:2
+  119  history
+  120  history > commandes.txt
